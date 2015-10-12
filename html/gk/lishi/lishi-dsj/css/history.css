@@ -1,0 +1,164 @@
+body, p, form, input, textarea, ul, li, h1, h2, h3, h4, dl, dt, dd, table, td, th { margin:0; padding:0; }
+table, td, th { border-collapse:collapse; }
+ul, li { list-style:none; }
+h1, h2, h3, h4 { font-size:100%; }
+img, input, textarea { vertical-align: middle; border:0; }
+a { text-decoration:none; color:#787878; outline:none; }
+a:hover { text-decoration:underline; }
+
+
+body {
+    font-size:12px;
+    font-family: "Œ¢»Ì—≈∫⁄", "Microsoft Yahei";
+    color:#666;
+    position:relative;
+    background:#fff;
+    background-image: url("../images/bg.png");
+}
+.clearfix:after{content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix{zoom:1;}
+.fl { float:left;}
+.fr { float:right;}
+/*.public*/
+.main {margin:0 auto; width:980px;} 
+a { blr:expression(this.onFocus=this.blur()) } /*’Î∂‘ IE*/
+a { outline:none; } /*’Î∂‘firefoxµ»*/
+
+.main {
+    padding:45px 0;
+    min-height:720px;
+
+}
+/*history*/
+.history {
+    background:url(../images/line04.gif) repeat-y 187px 0;
+    overflow:hidden;
+    position:relative;
+    z-index: 1;
+    filter:Alpha(opacity=20);
+}
+.cur{
+    text-align:center;
+    font-size:45px;
+    font-family: STXingkai;
+}
+
+.history-date { overflow:hidden;}
+
+
+@media only screen  and (max-width: 640px) {
+    .history-date h2 {
+        background: url(../images/icon06.png) no-repeat 158px 0;
+        height: 29px;
+        font-size: 80%;
+        font-weight: normal;
+        padding-left: 35px;
+        margin-bottom: 20px;
+    }
+    .history-date h2.first {
+        position:absolute;
+        left:0; top:0;
+        z-index:99;
+    }
+    .history-date h2 a {
+        color: #648852;
+        display:inline-block;
+        *display:inline;
+        zoom:1;
+        background:url(../images/icon08.png;) no-repeat right 50%;
+        padding-right:27px;
+        margin:21px 97px 0 0;
+    }
+    .history-date ul li.green dl dt {
+        font-size:80%£ª
+        line-height:20px;
+    }
+    .history-date ul li {
+        background:url(../images/icon07.png) no-repeat 180px 0;
+        padding-bottom: 0;
+        zoom:1;
+    }
+    .history-date ul li dl {
+        float:left;
+        padding-left:0;
+        margin-top:-5px;
+    }
+    .history-date ul li dl dt {
+        font:16px/18px Microsoft YaHei;
+        color:#737373;
+    }
+
+    .history-date ul li dl dt span { display:block; color:#787878; font-size:12px; }
+}
+
+
+
+@media only screen  and (min-width: 640px) {
+    .history-date h2 {
+        background: url(../images/icon06.png) no-repeat 158px 0;
+        height: 59px;
+        font-size: 130%;
+        font-weight: normal;
+        padding-left: 45px;
+        margin-bottom: 20px;
+    }
+    .history-date h2.first {
+        position:absolute;
+        left:0; top:0;
+        z-index:99;
+    }
+    .history-date h2 a {
+        color:#00bbff;
+        display:inline-block;
+        *display:inline;
+        zoom:1;
+        background:url(../images/icon08.png;) no-repeat right 50%;
+        padding-right:17px;
+        margin:21px 97px 0 0;
+    }
+    .history-date ul li.green dl dt {
+        font-size:25px;
+        line-height:28px;
+    }
+    .history-date ul li {
+        background:url(../images/icon07.png) no-repeat 180px 0;
+        padding-bottom:50px;
+        zoom:1;
+    }
+    .history-date ul li dl {
+        float:left;
+        padding-left:41px;
+        margin-top:-5px;
+    }
+    .history-date ul li dl dt {
+        font:20px/22px Microsoft YaHei;
+        color:#737373;
+    }
+
+    .history-date ul li dl dt span { display:block; color:#787878; font-size:16px; }
+
+}
+
+
+.history-date h2 a:hover { text-decoration:none;}
+.history-date h2 img { vertical-align:-5px;}
+.history-date h2.date02 { background:none;}
+.history-date ul {}
+
+.history-date ul li.last { padding-bottom:0;}
+.history-date ul li:after{content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.history-date ul li h3 { float:left; width:168px; text-align:right; padding-right:19px;color:#c3c3c3; font:normal 18px/16px Arial;}
+.history-date ul li h3 span { display:block; color:#d0d0d0;  font-size:12px;}
+
+
+
+.history-date ul li.green h3 { color:#1db702;}
+.history-date ul li.green h3 span { color:#a8dda3; }
+.history-date ul li.green dl { margin-top:-8px;}
+
+
+
+
+*body .history-date ul li dl dt {_font-size:12px !important; _font-weight:bold;}
+*body .history-date ul li dl dt span {_font-weight:normal !important;}
+*body .history-date ul li.green dl dt a {_background:transparent !important; *background:transparent !important;*font-size:12px !important; _font-weight:normal !important;}

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>错误页面</title>
+
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection" /> <!-- main stylesheet -->
+<link rel="stylesheet" type="text/css" media="all" href="css/tipsy.css" /> <!-- Tipsy implementation -->
+
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> <!-- uiToTop implementation -->
+<script type="text/javascript" src="js/custom-scripts.js"></script>
+<script type="text/javascript" src="js/jquery.tipsy.js"></script> <!-- Tipsy -->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+			
+	universalPreloader();
+						   
+});
+
+$(window).load(function(){
+
+	//remove Universal Preloader
+	universalPreloaderRemove();
+	
+	rotate();
+    dogRun();
+	dogTalk();
+	
+	//Tipsy implementation
+	$('.with-tooltip').tipsy({gravity: $.fn.tipsy.autoNS});
+						   
+});
+
+</script>
+
+
+<title>404 - Not found</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+
+<!-- Universal preloader -->
+<div id="universal-preloader">
+    <div class="preloader">
+        <img src="images/universal-preloader.gif" alt="universal-preloader" class="universal-preloader-preloader" />
+    </div>
+</div>
+<!-- Universal preloader -->
+
+<div id="wrapper">
+<!-- 404 graphic -->
+	<div class="graphic"></div>
+<!-- 404 graphic -->
+<!-- Not found text -->
+	<div class="not-found-text">
+    	<h2 class="not-found-text">页面找不到啦~\(≧▽≦)/~,估计被程序员哥哥吃了!</h2>
+    </div>
+<!-- Not found text -->
+
+<!-- search form -->
+<div class="search">
+	<form name="search" method="get" action="#" />
+        <input type="text" name="search" value="搜一搜..." />
+        <input class="with-tooltip" title="Search!" type="submit" name="submit" value="" />
+    </form>
+</div>
+<!-- search form -->
+
+<!-- top menu -->
+<div class="top-menu">
+	<a href="http://www.hustca.com" class="with-tooltip" title="返回到计算机协会首页">首页</a> | <a href="http://bbs.hustca.com" class="with-tooltip" title="进入计算机协会论坛">论坛</a> | <a href="http://www.hustca.com/html/lx/lx.html" class="with-tooltip" title="联系我们!">联系</a>
+</div>
+<!-- top menu -->
+
+<div class="dog-wrapper">
+<!-- dog running -->
+	<div class="dog"></div>
+<!-- dog running -->
+	
+<!-- dog bubble talking -->
+	<div class="dog-bubble">
+    	
+    </div>
+    
+    <!-- The dog bubble rotates these -->
+    <div class="bubble-options">
+    	<p class="dog-bubble">
+        	你迷路了吧，朋友？别担心，我可是一个睿智的导航犬哦 !
+        </p>
+    	<p class="dog-bubble">
+	        <br />
+        	汪! 汪!
+        </p>
+        <p class="dog-bubble">
+        	<br />
+        	别急! 我正在努力寻找路线!
+        </p>
+        <p class="dog-bubble">
+        	我好想吃饼干<br /><img style="margin-top:8px" src="images/cookie.png" alt="cookie" />
+        </p>
+        <p class="dog-bubble">
+        	<br />
+        	汪汪！我要吃饼干！不给就不走了
+        </p>
+        <p class="dog-bubble">
+        	<br />
+        	真好吃 汪~~~
+        </p>
+
+        <p class="dog-bubble">
+            咦？我好像看到了什么... <br /><img style="margin-top:8px" src="images/cat.png" alt="cat" />
+        </p>
+        <p class="dog-bubble">
+        	我们到底要寻找什么呢，朋友？ @_@
+        </p>
+    </div>
+    <!-- The dog bubble rotates these -->
+<!-- dog bubble talking -->
+</div>
+
+<!-- planet at the bottom -->
+	<div class="planet"></div>
+<!-- planet at the bottom -->
+</div>
+
+
+</body>
+</html>

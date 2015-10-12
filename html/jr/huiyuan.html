@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>计算机协会学习小组报名</title>
+    <meta name="keywords" content="baoming" />
+    <meta name="description" content="baoming" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" type="text/css" href="../../css/warning.css">
+    
+    <style type="text/css" >
+       body a:hover{text-decoration: none}
+        body{font-family: "Microsoft Yahei"}
+    </style>
+    <style type="text/css">
+        .error{  font-size: 12px;  color: #960000; }
+    </style>
+
+</head>
+<body class="templatemo-bg-gray">
+<h1 class="margin-bottom-15">加入我们</h1>
+<div class="container">
+    <div class="col-md-12">
+        <form id="signupForm" class="form-horizontal templatemo-create-account templatemo-container"  role="form" action="php/huiyuan/post.php" method="post">
+            <div class="form-inner">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="name" class="control-label">姓名</label>
+                        <input type="text" class="form-control required chinese " id="name" name="name" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 templatemo-radio-group">
+                        <label  for="sex1" class="radio-inline">
+                            <input type="radio" name="sex" id="sex1" value="male" > 男
+                        </label>
+                        <label for="sex2" class="radio-inline">
+                            <input type="radio" name="sex" id="sex2" value="female"  > 女
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="major" class="control-label">院系</label>
+                        <input type="text" class="form-control required" id="major" name="major" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="class" class="control-label required">班级</label>
+                        <input type="text" class="form-control required" id="class" name="class" placeholder="">
+                    </div>
+                 </div>
+
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="email" class="control-label">邮箱</label>
+                        <input type="email" class="form-control required email" id="email" name="email" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="tel" class="control-label">联系方式</label>
+                        <input type="text" class="form-control required tel"    id="tel" name="tel" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="reason" class="control-label ">加入理由</label>
+                        <textarea rows="5" cols="50" class="form-control" id="reason"  name="reason" placeholder=""></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="level" class="control-label">计算机水平</label>
+                        <textarea rows="5" cols="50" class="form-control" id="level" name="level" placeholder="请静下心来 填写一番 我们会根据此对您进行评估 分组"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-md-12">
+                      <label for="groups" class="control-label">报名组别</label><br>
+                      <input type="hidden" class="form-control  required" id="groups" name="groups" placeholder="">
+
+                    <label class="radio-inline">
+                        <input type="radio"   id="ps" value="ps"> PS
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio"   id="c" value="C language"> C language
+                    </label>
+                     <label class="radio-inline">
+                          <input type="radio"   id="office" value="Office"> Office
+                      </label>
+                     <label class="radio-inline">
+                          <input type="radio"   id="pr" value="Pr/Ae"> Pr/Ae
+                     </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label><input type="hidden" ><a href="javascript:;" data-toggle="modal" data-target="#study-intro">学习小组简介</a></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input type="submit" value="提交" id="btn" class="btn btn-info pull-left" >
+                    </div>
+                    <div class="col-md-6">
+                        <input type="reset" value="重置" class="btn btn-info pull-right" >
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="study-intro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">学习小组简介</h4>
+            </div>
+            <div class="modal-body">       <!--学习小组简介-->
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="warning" style="display: block; opacity: 1;">
+    <div id="warningtext">
+        <div style="height: 20px;">
+            <p>报名即将开始，我们的大范围招新将在2015年9月27日和28日进行 现在可加群
+                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=f26044b2a2c05aefedeef0dc6f6f17b38fb7eb6cfeb3cdd82b43e6eee95f6462">
+                315559713</a>
+            
+            </p>
+        </div>
+    </div>
+    <input type="button" value="确定" onclick="getElementById('warning').style.display=document.getElementById('warning').style.display='none' ">
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script> <!--jquery 需要配合 jquery.validate的使用-->
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script> <!--就是那个动态弹框 模态需要 （学习小组简介）-->
+<script type="text/javascript" src="../../js/jquery.validate.min.js" ></script>
+<script>  /*赵海峰认为性别必须选择  哈哈 组别可以会员大会现场报名*/
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            if ($(":radio:checked").length==0)
+            {
+                alert("你的性别未选择哦~");
+            }
+        });
+    });
+</script>
+<script>
+    $().ready(function() {
+        $("#signupForm").validate();
+    });
+</script>
+<script type="text/javascript">     // 添加手机号码验证规则
+    $("#signupForm").validate({
+        rules: {
+            tel: {
+                tel: true
+            }
+        }
+    });
+    jQuery.validator.addMethod("tel", function(value, element) {
+        var length = value.length;
+        return this.optional(element) || (length == 11 && /^((1[3578][0-9]{1})+\d{8})$/.test(value));
+    }, "我们的手机都是11位的~");
+</script>
+<script type="text/javascript">     // 添加中文验证规则
+  $("#signupForm").validate({
+    rules: {
+        chinese: {
+            chinese: true
+        }
+    }
+});
+
+    jQuery.validator.addMethod("chinese", function(value, element) {
+var tel = /^[\u4e00-\u9fa5]+$/;
+return this.optional(element) || (tel.test(value));
+}, "请输入你的中文姓名");
+</script>
+
+
+</body>
+
+</html>

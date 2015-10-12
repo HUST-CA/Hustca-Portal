@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>计算机协会计算机等级考试培训报名</title>
+    <meta name="keyword" content="全国计算机等级考试报名 华中科技大学计算机协会  华中科技大学计算机等级考试报名 计算机协会计算机等级考试培训 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimun-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/warning.css">
+    <script type="text/javascript" src="../../../js/jquery-1.11.0.min.js"></script>
+
+    <link href="apply/css/city.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="apply/js/city.min.js"></script>
+
+    <style type="text/css" >
+       body a:hover{text-decoration: none}
+        body{font-family: "Microsoft Yahei"}
+
+
+    </style>
+</head>
+<body>
+<form class=" s" role="form" action="../apply/php/post.php" method="post">
+    <div class="container" style="padding-top: 5%">
+       <div class="col-md-6">
+        <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name">
+        </div>
+    </div>
+       <div class="col-md-6">
+        <div class="form-group">
+            <label for="telphone">联系方式</label>
+            <input type="tel" class="form-control" id="telphone" placeholder="Enter Telphone">
+        </div>
+    </div>
+       <div class="col-md-6">
+          <div class="form-group">
+             <label for="email1">电子邮箱</label>
+             <input type="email" class="form-control" id="email1" placeholder="Enter Email">
+        </div>
+    </div>
+       <div class="col-md-6">
+        <div class="form-group">
+            <label for="area">校区</label>
+            <input type="text" class="form-control" id="area" placeholder="Enter Area">
+        </div>
+    </div>
+       <div class="col-md-6">
+        <div class="form-group">
+            <label>性别</label>
+        <label  for="sex1" class="radio-inline">
+            <input type="radio" name="sex" id="sex1" value="male"> 男
+        </label>
+        <label for="sex2" class="radio-inline">
+            <input type="radio" name="sex" id="sex2" value="female"> 女
+        </label>
+            </div>
+    </div>
+       <div class="col-md-6">
+        <div class="form-group">
+            <form action="" name="form1">
+                <div class="infolist">
+                    <div class="liststyle">
+                                <span id="Province">
+                                    <i>请选择等级</i>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">请选择等级</a></li>
+                                    </ul>
+                                    <input type="hidden" name="dj" value="请选择等级">
+                                </span>
+                                <span id="City">
+                                    <i>请选择项目</i>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">请选择项目</a></li>
+                                    </ul>
+                                    <input type="hidden" name="xm" value="请选择项目">
+                                </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-6">
+            <input type="reset" value="重置" class="btn btn-default pull-left">
+        </div>
+        <div class="col-md-6">
+            <input type="submit" value="提交" class="btn btn-default pull-right">
+        </div>
+
+    </div>
+</div>
+
+
+</form>
+<div class="col-md-12" style="text-align: center ;padding-top: 30px">
+    <a href="http://www.hustca.com" target="_blank">华中科技大学计算机协会</a>
+</div>
+<div class="col-md-12" style="text-align: center;padding-bottom: 20px;padding-top: 10px">
+    <a href="http://www.hustca.com/html/px/ncre/ncre.html" target="_blank">华中科技大学计算机协会 全国计算机等级考试培训系统</a>
+</div>
+
+<div id="warning" style="display: block; opacity: 1;">
+    <div id="warningtext">
+        <div style="height: 20px;"><p>培训报名尚未开始，请耐心等待</p></div>
+    </div>
+    <input type="button" value="确定" onclick="getElementById('warning').style.display=document.getElementById('warning').style.display='none' ">
+</div>
+
+
+
+</body>
+</html>

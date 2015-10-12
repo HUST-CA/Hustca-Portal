@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>计算机协会义务维修队招募</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        .error{  font-size: 12px;  color: #960000; }
+    </style>
+</head>
+<body class="templatemo-bg-image-6">
+<div class="container">
+    <div class="col-md-12">
+        <form id="signupForm" class="form-horizontal templatemo-contact-form-1" role="form" action="php/corepair/post.php" method="post">
+            <div class="form-group">
+                <div class="col-md-12">
+                    <h1 class="margin-bottom-15">义务维修队招募</h1>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6">
+                    <label for="name" class="control-label">姓名</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control required chinese" id="name" name="name" placeholder="">
+                    </div>
+                </div>
+                <div class="col-md-6 templatemo-radio-group">
+                    <label  for="sex1" class="radio-inline">
+                        <input type="radio" name="sex" id="sex1" value="male"> 男
+                    </label>
+                    <label for="sex2" class="radio-inline">
+                        <input type="radio" name="sex" id="sex2" value="female"> 女
+                    </label>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="col-md-6">
+                    <label for="tel" class="control-label">联系方式</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-mobile"></i>
+                        <input type="text" class="form-control required tel" id="tel" name="tel" placeholder="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="control-label">邮箱</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-envelope-o"></i>
+                        <input type="email" class="form-control required email" id="email" name="email" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-12">
+                    <label for="major" class="control-label">学院-专业-班级</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-book"></i>
+                        <input type="text" class="form-control required " id="major" name="major">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6">
+                    <label for="apartment" class="control-label">公寓</label>
+                    <div class="templatemo-input-icon-container">
+                        <input type="text" class="form-control required" id="apartment" name="apartment" placeholder="沁苑">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="building" class="control-label">楼栋</label>
+                    <div class="templatemo-input-icon-container">
+                        <input type="text" class="form-control" id="building" name="building" placeholder="十栋">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-md-12">
+                    <label for="experience" class="control-label">电脑水平及操作经验</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <textarea rows="6" cols="50" class="form-control" id="experiences" name="experiences" placeholder=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <label for="reason" class="control-label">申请理由</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <textarea rows="8" cols="50" class="form-control" id="reason" name="reason" placeholder=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6">
+                    <input type="reset" value="重置" class="btn btn-success pull-left">
+                </div>
+                <div class="col-md-6">
+                    <input type="submit" value="提交" id="btn" class="btn btn-success pull-right">
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.validate.min.js" ></script>
+
+    <script>  /*赵海峰认为性别必须选择  哈哈 组别可以会员大会现场报名*/
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            if ($(":radio:checked").length==0)
+            {
+                alert("你的性别未选择哦~");
+            }
+        });
+    });
+    </script>
+
+    <script>
+        $().ready(function() {
+            $("#signupForm").validate();
+        });
+    </script>
+    <script type="text/javascript">     // 添加手机号码验证规则
+    $("#signupForm").validate({
+        rules: {
+            tel: {
+                tel: true
+            }
+        }
+    });
+    jQuery.validator.addMethod("tel", function(value, element) {
+        var length = value.length;
+         return this.optional(element) || (length == 11 && /^((1[3578][0-9]{1})+\d{8})$/.test(value));
+    }, "我们的手机都是11位的~");
+    </script>
+    
+    
+    
+    <script type="text/javascript">     // 添加中文验证规则
+    $("#signupForm").validate({
+        rules: {
+            chinese: {
+                chinese: true
+            }
+        }
+    });
+
+    jQuery.validator.addMethod("chinese", function(value, element) {
+        var tel = /^[\u4e00-\u9fa5]+$/;
+        return this.optional(element) || (tel.test(value));
+    }, "请输入你的中文姓名");
+    </script>
+
+</div>
+</body>
+</html>

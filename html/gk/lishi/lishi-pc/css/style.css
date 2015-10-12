@@ -1,0 +1,159 @@
+*{ font-family:"微软雅黑"}
+
+body{ background-color: #e4e4e4; width:100%;}
+body, input, button, select, textarea { font-size:12px; color:#333;}
+textarea { resize: none; }
+body, ul, ol, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form,img, fieldset, .pr, .pc { margin:0; padding:0;}
+table { empty-cells: show; border-collapse: collapse;
+}
+caption, th { text-align: left; font-weight: 400; }
+ul li, .xl li { list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 1em; font-weight:normal;}
+em, cite, i { font-style: normal; display: block;}
+a { color:#666; text-decoration: none; transition: 0.5s all; -webkit-transition: 0.5s all; -moz-transition: 0.5s all; -o-transition: 0.5s all;}
+a:hover{ color:#cda484}
+
+
+
+    img {
+        border: 0;
+        width: 436px;
+        height: 300px;
+    }
+
+
+label { cursor: pointer; }
+
+.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden ;  }
+.cl { zoom: 1; }
+
+.details{
+    position:relative;
+    margin-left: 560px;
+    margin-top: -300px;
+    width: 188px;
+    height: 270px;
+    border: 15px solid #b7805a;
+    font-family: "微软雅黑", "Microsoft Yahei";
+}
+.details h2{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 145%;
+    color: #233aff;
+}
+.details p{
+    padding-top: 10px;
+    font-size: 136%;
+    text-align: left;
+    float: left;
+}
+.details span{
+    font-size: 100%;
+    color: green;
+    text-align: left;
+    padding-top: 10%;
+}
+.time{
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Menu style */
+
+
+    #timeline {
+        width: 1120px;
+        height: 500px;
+        overflow: hidden;
+        margin: 60px auto 0 auto;
+        position: relative;
+        background: url('../images/licbg.png') left 340px repeat-x;
+    }
+    #issues{
+        width:1120px;
+        height:300px;
+        overflow:hidden;
+    }
+    #issues li{
+        width:1120px;
+        height:300px;
+        list-style:none;
+        float:left;
+    }
+    #next,#prev{
+        display: block;
+        position:absolute;
+        font-size:100px;
+        font-family:"宋体";
+        top:90px;width:100px;
+        height:100px;
+        text-align:center;
+        line-height:100px;
+        overflow:hidden;
+        color:#713611;
+    }
+    #next {
+        right: 40%;
+        margin-right: -400px;
+    }
+
+    #prev {
+        left: 40%;
+        margin-left: -400px;
+    }
+
+
+
+
+#dates{
+    width:100%;
+    overflow:hidden;
+    margin-top:20px;
+}
+#dates li{
+    float:left;
+    width:94px;
+    height:90px;
+    font-size:16px;
+    text-align:center;
+}
+#dates a{
+    color:#713611;
+    width:94px;
+    height:90px;
+    line-height:130px;
+    display:block;
+}
+#dates .selected{
+    font-size:18px;
+    font-weight:bold;
+    background:url(../images/licbgt.png) no-repeat center top;
+}
+
+#issues li img{
+    text-align:center;
+    display:block;
+    margin:0 auto;
+}
+
+
+
+
+#next.disabled,#prev.disabled{opacity:0.2;}
+
+
+
+
+

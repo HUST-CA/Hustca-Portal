@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>计算机协会部员申请</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <!-- <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"> 没用的样式 以后会用到 其他几个我就删了 到时候复制一下就好-->
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/warning.css">
+    <style type="text/css" >
+       body a:hover{text-decoration: none}
+        body{font-family: "Microsoft Yahei"}
+    </style>
+
+    <style type="text/css">
+        .error{  font-size: 12px;  color: #960000; }
+    </style>
+</head>
+<body class="templatemo-bg-image-2">
+<div class="container">
+    <div class="col-md-12">
+        <form id="signupForm" class="form-horizontal templatemo-contact-form-1" role="form" action="php/staff/post.php" method="post">
+            <div class="form-group">
+                <div class="col-md-12">
+                    <h1 class="margin-bottom-15">部员申请</h1>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6">
+                    <label for="name" class="control-label">姓名</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control required chinese" id="name"  name="name" placeholder="">
+                    </div>
+                </div>
+                <div class="col-md-6 templatemo-radio-group">
+                    <label  for="sex1" class="radio-inline">
+                        <input type="radio" name="sex" id="sex1" value="male"> 男
+                    </label>
+                    <label for="sex2" class="radio-inline">
+                        <input type="radio" name="sex" id="sex2" value="female"> 女
+                    </label>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="col-md-6">
+                    <label for="tel" class="control-label">联系方式</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-mobile"></i>
+                        <input type="text" class="form-control required tel" id="tel" name="tel" placeholder="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="control-label">邮箱</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-envelope-o"></i>
+                        <input type="email" class="form-control required email" id="email" name="email" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-12">
+                    <label for="major" class="control-label">学院-专业-班级</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-book"></i>
+                        <input type="text" class="form-control required" id="major" name="major" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3">
+                    <label for="apartment" class="control-label">公寓</label>
+                    <div class="templatemo-input-icon-container">
+                        <input type="text" class="form-control required" id="apartment" name="apartment" placeholder="沁苑">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="building" class="control-label">楼栋</label>
+                    <div class="templatemo-input-icon-container">
+                        <input type="text" class="form-control required" id="building" name="building " placeholder="十栋">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="room" class="control-label">房间</label>
+                    <div class="templatemo-input-icon-container">
+                        <input type="text" class="form-control" id="room" name="room" placeholder="703室">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-12">
+                  <label for="groups" class="control-label">报名组别</label><br>
+                  <input type="hidden" class="form-control" id="groups" name="groups">
+
+                  <div class="col-md-6 templatemo-radio-group">
+                      <label class="radio-inline">
+                          <input type="radio"  id="office" value="office">办公室
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" id="caiwu" value="caiwu">财务部
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio"  id="quanyi" value="quanyi">权益部
+                      </label>
+               </div>
+                  <div class="col-md-6 templatemo-radio-group">
+                      <label class="radio-inline">
+                          <input type="radio"  id="acti" value="acti">活动部
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" id="media" value="media">媒体部
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" id="wl" value="wl">外联部
+                      </label>
+                </div>
+                </div>
+             </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <label for="experience" class="control-label">学生工作经历</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <textarea rows="6" cols="50" class="form-control required" id="experience" name="experience" placeholder=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <label for="reason" class="control-label">申请理由</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <textarea rows="8" cols="50" class="form-control required" id="reason" name="reason" placeholder=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6">
+                    <input type="reset" value="重置" class="btn btn-success pull-left">
+                </div>
+                <div class="col-md-6">
+                    <input type="submit" value="提交" id="btn" class="btn btn-success pull-right">
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="warning" style="display: block; opacity: 1;">
+    <div id="warningtext">
+        <div style="height: 20px;"><p>申请马上开始，若迫不及待加入 请<a href="../lx/lx.html">联系我们</a></p></div>
+    </div>
+    <input type="button" value="确定" onclick="getElementById('warning').style.display=document.getElementById('warning').style.display='none' ">
+</div>
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.validate.min.js" ></script>
+
+<script>  /*赵海峰认为性别必须选择  哈哈 组别可以会员大会现场报名*/
+$(document).ready(function(){
+    $("#btn").click(function(){
+        if ($(":radio:checked").length==0)
+        {
+            alert("你的性别未选择哦~");
+        }
+    });
+});
+</script>
+<script>
+    $().ready(function() {
+        $("#signupForm").validate();
+    });
+</script>
+<script type="text/javascript">     // 添加手机号码验证规则
+$("#signupForm").validate({
+    rules: {
+        tel: {
+            tel: true
+        }
+    }
+});
+jQuery.validator.addMethod("tel", function(value, element) {
+    var length = value.length;
+     return this.optional(element) || (length == 11 && /^((1[3578][0-9]{1})+\d{8})$/.test(value));
+}, "我们的手机都是11位的~");
+</script>
+<script type="text/javascript">     // 添加中文验证规则
+$("#signupForm").validate({
+    rules: {
+        chinese: {
+            chinese: true
+        }
+    }
+});
+
+jQuery.validator.addMethod("chinese", function(value, element) {
+    var tel = /^[\u4e00-\u9fa5]+$/;
+    return this.optional(element) || (tel.test(value));
+}, "请输入你的中文姓名");
+</script>
+
+</body>
+</html>
