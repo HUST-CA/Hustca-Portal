@@ -173,7 +173,7 @@ body{
     width: auto;
     margin-top: 80px;
     margin-bottom: 0;
-    
+
 }
 
 .latestProjects p{
@@ -336,7 +336,7 @@ body{
 }
 
 /*-----------------------------------
-	Main Picture 
+	Main Picture
 ------------------------------------*/
 
 .headpicture{
@@ -744,9 +744,9 @@ body{
 /* On smaller screens */
 
 @media (max-width: 992px) {
-	
+
 	/* General */
-	
+
 	body{
 		padding-top: 76px;
 	}
@@ -754,27 +754,27 @@ body{
 	li{
 		padding-left:8px;
 	}
-	
+
 
 
 	/* Navigation bar */
-	
+
 	.navbar{
 		padding: 16px 0;
 	}
-	
+
 	/* Main picture */
-	
+
 	.headpicture{
 		height: 250px;
 	}
 
 	/* Latest Projects */
-	
+
 	.textStyle{
 		margin-top: 40px;
 	}
-	
+
 	.titleStyle{
 		margin-top: 60px;
 	}
@@ -794,9 +794,9 @@ body{
     #footerLogoText{
         text-align: center;
     }
-	
+
 	/* Sharing buttons */
-	
+
 	.responsiveAlign {
 		text-align: center;
 		padding: 5px ;
@@ -804,12 +804,12 @@ body{
 
 }
 
-/* On bigger screens */ 
+/* On bigger screens */
 
 @media (min-width: 993px) {
 
 	/* Sharing buttons */
-	
+
 	.responsiveAlign {
 		float: right;
 	}
@@ -819,3 +819,10 @@ body{
     /*banner*/
 
 }
+
+
+
+
+
+
+/*         */

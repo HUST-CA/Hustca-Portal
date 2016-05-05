@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>华中科技大学计算机协会</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="keyword" content="华中科技大学计算机协会"/>
+		<meta name="description" content="HUSTCA 华科计算机 协会 社团 华中科技大学计算机协会 华科社团 hust" />
+
+
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/custom.css"/>
+        <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+
+
+
+
+
+
+
+        <!--menu-->
+        <link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)" href="../css/demo.css" />
+        <link type="text/css" rel="stylesheet" media="screen and (max-width:640px)" href="../css/jquery.mmenu.all.css" />
+
+        <script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('nav#menu').mmenu({
+                    extensions	: [ 'effect-slide-menu', 'pageshadow' ],
+                    searchfield	: true,
+                    counters	: true,
+                    navbars		: [
+                        {
+                            position	: 'top'
+                        }, {
+                            position	: 'bottom',
+                            content		: [ '<a href="http://www.hustca.com">华中科技大学计算机协会</a>' ]
+                        }
+                    ]
+                });
+            });
+        </script>
+        <!--menu-->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".flip").mouseover(function(){
+                    $(this).next("div").slideDown(500);
+                });
+                $(".content").mouseleave(function(){
+                    $(this).children("div").slideUp(500);
+                });
+            });
+        </script>
+
+
+
+        <style type="text/css">
+            div.panel,p.flip
+            {
+
+                margin:0px;
+                padding:5px;
+                text-align:center;
+                border: hidden 0px #000000;
+            }
+            div.panel
+            {
+
+                height:auto;
+                display:none;
+            }
+            .banner{
+                height: 20%;
+            }
+        </style>
+        <style type="text/css">
+            .lishish{
+                padding-top: 20px;
+
+            }
+        </style>
+
+
+</head>
+
+	<body>
+
+<!--  Navigation Bar -->
+<?php  include_once(dirname(__FILE__) . './navigation.php'); ?>
+
+<!--mobile menu-->
+<?php  include_once(dirname(__FILE__) . './menu-mobile.php'); ?>
+
+
+<!-- Banner -->
+<div class="banner">
+    <div class="banner-images">
+        <img src="../images/gk.jpg"  class="img-responsive" width="100%" height="400" usemap="#Map">
+        <map name="Map">
+          <area shape="rect" coords="104,212,477,265" href="#introduction">
+          <area shape="rect" coords="106,273,383,334" href="#group">
+          <area shape="rect" coords="106,343,388,397" href="#history">
+          <area shape="rect" coords="872,81,1224,138" href="../index.php" target="_blank">
+        </map>
+
+
+     </div>
+</div>
+
+
+
+<!-- Main Page -->
+        <div class="  mainpage">
+
+            <div class="jianjie" id="introduction">  <!-- 简介 -->
+
+                <div class="container-fluid title ">
+                    <div class="col-md-12">
+                        <h1>简介</h1>
+                    </div>
+                </div>
+                <div class="jianjie-content" style="overflow: hidden"><br>
+                    <p><a href="http://baike.baidu.com/link?url=kmozGxl8Xcos2zVsxrR8ahSFIpoHqazODoo4OCBw7QyQln8pdmV8kUZs686AdH9i17TPHTlBin6mNFviG3I36K  " target="_blank">华中科技大学计算机协会</a>
+                        自<strong>1990年3月14日</strong>成立至今，经历了<strong>25</strong>年的风风雨雨。 </p>
+                    <p>----在过去的岁月里，协会的全体成员和理事紧密配合，为普及计算机知识，提高全校同学的计算机水平，促进计算机学术热潮的形成，付出了辛勤的劳动，并取得了累累硕果。 </p>
+                    <p>----协会宗旨：<strong>“自由”、“交流”、“合作”、“共享”；</strong> 坚持“<strong>一个中心”、“两个方向”、“四个结合”</strong>的发展理念，即以服务广大会员和全校师生为中心，走普及计算机知识和培养IT人才的发展道路，开展以IT讲座、竞赛活动、学习小组、实践开发相结合的活动。</p>
+                    <p> ----协会基本任务：广泛团结、组织计算机爱好者和在计算机方面有特长的学生，开展学术交流和技术讲座，提高会员理论修养，增强学生工作能力，营造良好计算机知识学习氛围，为广大师生学习和提高计算机知识水平提供一个自由而友好的平台。 </p>
+                </div>
+            </div>
+
+            <div class="bumen" id="group" >          <!-- 部门 -->
+                <div class=" container-fluid title ">
+                    <div class="col-md-12">
+                        <h1>部门</h1>
+                    </div>
+                </div>
+                <iframe src="gk/bumen/bumen.html" frameBorder="0"  width="100%"  scrolling="no" height="530"></iframe>
+
+
+            </div>
+
+
+            <div  class="lishi" id="history">   <!-- 历史 -->
+                <div class="container-fluid title  ">
+                    <div class="col-md-12">
+                        <h1>
+                            历史
+                        </h1>
+                    </div>
+                </div>
+                <iframe src="gk/lishi/lishi-m/index.php" frameBorder="0"  width="100%"  scrolling="no" height="510"></iframe>
+            </div>
+
+
+
+            <div class="renshi" id="people" >    <!--人事 -->
+                <div class="container-fluid title  ">
+                    <div class="col-md-12">
+                        <h1>优秀人员</h1>
+                    </div>
+                </div>
+                <iframe src="gk/renshi/index.php" frameBorder="0"  width="100%"  scrolling="no" height="580"></iframe>
+
+
+
+            </div>
+            </div>
+
+
+
+
+  <!-- Footer -->
+<?php  include_once(dirname(__FILE__) . './footer.php'); ?>
+
+        <!--up start-->
+        <script type="text/javascript" src="../js/scrolltopcontrol.js"></script>
+        <div style="height:10px;"></div>
+        <!--up end-->
+
+
+
+
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/myscript.js"></script>
+
+
+
+</body>
+</html>

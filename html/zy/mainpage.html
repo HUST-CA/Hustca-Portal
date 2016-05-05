@@ -1,0 +1,77 @@
+<div class="container">
+            <section id="grid" class="grid clearfix">
+                <a href="http://www.hustca.com/download/software" target="_blank" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+                    <figure>
+                        <img src="../html/zy/1.png" />
+                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                        <figcaption>
+                            <h2>软件</h2>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="http://www.hustca.com/download/movies" target="_blank" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+                    <figure>
+                        <img src="../html/zy/2.png" />
+                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                        <figcaption>
+                            <h2>电影</h2>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="http://www.hustca.com/download/meiju" target="_blank" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+                    <figure>
+                        <img src="../html/zy/3.png" />
+                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                        <figcaption>
+                            <h2>美剧</h2>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="http://www.hustca.com/download/games" target="_blank" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+                    <figure>
+                        <img src="../html/zy/4.png" />
+                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                        <figcaption>
+                            <h2>游戏</h2>
+                        </figcaption>
+                    </figure>
+                </a>
+            </section>
+        </div>
+
+
+        <script src="../html/zy/jquery.js"></script>
+        <script src="../html/zy/makisu.js"></script>
+        <script src="zy/snap.svg-min.js"></script>
+
+        <!--[if IE]>
+        <script src="zy/html5.js"></script>
+        <![endif]-->
+        <script>
+            (function() {
+
+                function init() {
+                    var speed = 300,
+                            easing = mina.backout;
+
+                    [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+                        var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+                                pathConfig = {
+                                    from : path.attr( 'd' ),
+                                    to : el.getAttribute( 'data-path-hover' )
+                                };
+
+                        el.addEventListener( 'mouseenter', function() {
+                            path.animate( { 'path' : pathConfig.to }, speed, easing );
+                        } );
+
+                        el.addEventListener( 'mouseleave', function() {
+                            path.animate( { 'path' : pathConfig.from }, speed, easing );
+                        } );
+                    } );
+                }
+
+                init();
+
+            })();
+        </script>

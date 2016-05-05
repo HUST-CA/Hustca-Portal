@@ -78,7 +78,7 @@
 
                 <div class="form-group">
                   <div class="col-md-12">
-                      <label for="groups" class="control-label">报名组别</label><br>
+                      <label for="groups" class="control-label">报名组别 </label><br>
                       <input type="hidden" class="form-control  required" id="groups" name="groups" placeholder="">
 
                     <label class="radio-inline">
@@ -90,15 +90,15 @@
                      <label class="radio-inline">
                           <input type="radio"   id="office" value="Office"> Office
                       </label>
-                     <label class="radio-inline">
-                          <input type="radio"   id="pr" value="Pr/Ae"> Pr/Ae
-                     </label>
                   </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-md-3">
                         <label><input type="hidden" ><a href="javascript:;" data-toggle="modal" data-target="#study-intro">学习小组简介</a></label>
+                    </div>
+                    <div class="col-md-3">
+                        <label><input type="hidden" ><a href="http://www.hustca.com/html/gk/system/华中科技大学计算机协会章程.html" target="_blank">协会章程</a></label>
                     </div>
                 </div>
                 <div class="form-group">
@@ -125,7 +125,22 @@
                 <h4 class="modal-title" id="myModalLabel">学习小组简介</h4>
             </div>
             <div class="modal-body">       <!--学习小组简介-->
-
+                <h3>PS简介</h3>
+                <p>Photoshop主要处理以像素所构成的数字图像。使用其众多的编修与绘图工具，可以有效地进行图片编辑工作。ps有很多功能，在图像、图形、文字、视频、出版等各方面都有涉及。</p>
+                <a href="http://baike.baidu.com/link?url=MztrkMxJlWZ4Zz4-cPGPfQ1E2DyzlytjOvdCASYXoDycBy-hYCbrwDY-i0S0LMe2h9Tbj69v-myXhOWrefYg8K" target="_blank">详细</a>
+                <hr>
+                
+                <h3>Office简介</h3>
+                <p>Microsoft Office是微软公司开发的一套基于 Windows 操作系统的办公软件套装。常用组件有 Word、Excel、Powerpoint等。</p>
+                <a href="http://baike.baidu.com/link?url=ExQoTUCwzKAQt7CLlTwNKYsFtpULM7-KR-YY_cJwAJwhT79QW8HzLy5HM4hgYN-hXK4Dlo3RinAIW4X-wGcqka" target="_blank">详细</a>
+                <hr>
+                
+                <h3>C语言简介</h3>
+                <p>C语言是一门通用计算机编程语言，应用广泛。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。</p>
+                <a href="http://baike.baidu.com/link?url=sC8yS9QlxjJX-q59EI_ZvNDB1Wh9iYRR6CN2i4wG6P5igQwA4pK-dDxiL7hZt52WS1hWQ9CK_I0sfmHVhSKK8K" target="_blank">详细</a>
+                <hr>
+                
+                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -133,7 +148,7 @@
         </div>
     </div>
 </div>
-
+       <!--
 <div id="warning" style="display: block; opacity: 1;">
     <div id="warningtext">
         <div style="height: 20px;">
@@ -146,11 +161,11 @@
     </div>
     <input type="button" value="确定" onclick="getElementById('warning').style.display=document.getElementById('warning').style.display='none' ">
 </div>
-
+-->
 <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script> <!--jquery 需要配合 jquery.validate的使用-->
 <script type="text/javascript" src="../../js/bootstrap.min.js"></script> <!--就是那个动态弹框 模态需要 （学习小组简介）-->
 <script type="text/javascript" src="../../js/jquery.validate.min.js" ></script>
-<script>  /*赵海峰认为性别必须选择  哈哈 组别可以会员大会现场报名*/
+<script>  /* 组别可以会员大会现场报名*/
     $(document).ready(function(){
         $("#btn").click(function(){
             if ($(":radio:checked").length==0)

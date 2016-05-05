@@ -26,7 +26,7 @@
                     <label for="name" class="control-label">姓名</label>
                     <div class="templatemo-input-icon-container">
                         <i class="fa fa-user"></i>
-                        <input type="text" class="form-control required chinese" id="name" placeholder=" ">
+                        <input type="text" class="form-control required chinese" name="name" id="name" placeholder=" ">
                     </div>
                 </div>
                 <div class="col-md-6 templatemo-radio-group">
@@ -46,14 +46,14 @@
                     <label for="tel" class="control-label">联系方式</label>
                     <div class="templatemo-input-icon-container">
                         <i class="fa fa-mobile"></i>
-                        <input type="text" class="form-control " id="tel" placeholder="">
+                        <input type="text" class="form-control " name="tel" id="tel" placeholder="">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <label for="email" class="control-label">邮箱</label>
                     <div class="templatemo-input-icon-container">
                         <i class="fa fa-envelope-o"></i>
-                        <input type="email" class="form-control required email" id="email" placeholder="">
+                        <input type="email" class="form-control required email" name="email" id="email" placeholder="">
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <label for="complainment" class="control-label">网站问题</label>
                     <div class="templatemo-input-icon-container">
                         <i class="fa fa-pencil-square-o"></i>
-                        <textarea rows="5" cols="50" class="form-control required" id="complainment" placeholder=""></textarea>
+                        <textarea rows="5" cols="50" class="form-control required" name="complainment"   placeholder=""></textarea>
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@
                     <label for="advice" class="control-label">改进意见</label>
                     <div class="templatemo-input-icon-container">
                         <i class="fa fa-pencil-square-o"></i>
-                        <textarea rows="5" cols="50" class="form-control required" id="advice" placeholder=""></textarea>
+                        <textarea rows="5" cols="50" class="form-control required" name="advice" placeholder=""></textarea>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@ $("#signupForm").validate({
 });
 jQuery.validator.addMethod("tel", function(value, element) {
     var length = value.length;
-    return this.optional(element) || (length == 11 && /^(((13[0-9]{1})|(15[0-9]{1}))+\d{8})$/.test(value));
+    return this.optional(element) || (length == 11 && /^((1[3578][0-9]{1})+\d{8})$/.test(value));
 }, "我们的手机都是11位的~");
 </script>
 <script type="text/javascript">     // 添加中文验证规则
