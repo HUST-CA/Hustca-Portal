@@ -1,3 +1,42 @@
+<!--     说明         -->
+<!--
+1.响应式设计 自动调整页面结构
+2.二级菜单滑动特效   如果没有滑动 一般是 jquery-1.11.0.min.js的问题 看看是否缺失 由于在menu-mobile.php中已经引入了 jquery-1.11.0.min.js  所以注意别重复引用
+3.
+
+-->
+<!--Author:Naihai 赵海峰-->
+
+<!--二级菜单滑动begin-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".flip").mouseover(function(){
+            $(this).next("div").slideDown(500);
+        });
+        $(".content").mouseleave(function(){
+            $(this).children("div").slideUp(500);
+        });
+    });
+</script>
+<!--二级菜单滑动end-->
+
+<!--二级菜单样式begin-->
+<style type="text/css">
+    div.panel,p.flip {
+        margin:0px;
+        padding:5px;
+        text-align:center;
+        border: hidden 0px #000000;
+    }
+    div.panel {
+        height:auto;
+        display:none;
+    }
+</style>
+<!--二级菜单样式end-->
+
+
+
 <nav  class="navbar navbar-default navbar-fixed-top noBorder" role="navigation">
     <div class="container">
         <div class="navbar-header">

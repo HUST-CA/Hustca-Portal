@@ -9,55 +9,14 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/custom.css"/>
     <script src="../js/jquery-1.11.0.min.js"></script>
-    <!--menu-->
-    <link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)" href="../css/demo.css" />
-    <link type="text/css" rel="stylesheet" media="screen and (max-width:640px)" href="../css/jquery.mmenu.all.css" />
 
-    <script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $('nav#menu').mmenu({
-                extensions	: [ 'effect-slide-menu', 'pageshadow' ],
-                searchfield	: true,
-                counters	: true,
-                navbars		: [
-                    {
-                        position	: 'top'
-                    }, {
-                        position	: 'bottom',
-                        content		: [ '<a href="http://www.hustca.com">华中科技大学计算机协会</a>' ]
-                    }
-                ]
-            });
-        });
-    </script>
-    <!--menu-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".flip").mouseover(function(){
-                $(this).next("div").slideDown(500);
-            });
-            $(".content").mouseleave(function(){
-                $(this).children("div").slideUp(500);
-            });
-        });
-    </script>
+    <!--mobile menu begin-->
+     <!--mobile menu end-->
+
+    <!--二级菜单滑动begin-->
+    <!--二级菜单滑动end-->
 
     <style type="text/css">
-        div.panel,p.flip
-        {
-
-            margin:0px;
-            padding:5px;
-            text-align:center;
-            border: hidden 0px #000000;
-        }
-        div.panel
-        {
-
-            height:auto;
-            display:none;
-        }
         .col-md-4 h2{
             text-align: center;
             font-family: "arial", "微软雅黑";
@@ -69,15 +28,12 @@
         figure.effect-winston {
             background: #000000;
         }
-
         figure.effect-winston img {
             -webkit-transition: opacity 0.65s;
             transition: opacity 0.65s;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
         }
-
-
         figure.effect-winston:hover img {
             opacity: 0.2;
         }
@@ -99,7 +55,6 @@
 <div class="banner">
     <div class="banner-images">
      <img src="../images/bs-banner.jpg" class="img-responsive">
-
     </div>
 </div>
 
@@ -107,35 +62,30 @@
 
 <!-- Main Page -->
 <div class="container-fluid">
-    <div class="container">
-        <div class="col-md-12">
-
-            <div class="col-md-4">
-                <h2>极客周末</h2>
-                <figure  class="effect-winston">
-                   <a href="bs/jike.html" target="_blank"><img src="bs/images/1.jpg" class="img-responsive"></a>
-
-                </figure>
+     <div class="container">
+           <div class="col-md-12">
+                  <div class="col-md-4">
+                      <h2>极客周末</h2>
+                      <figure  class="effect-winston">
+                         <a href="bs/jike.html" target="_blank"><img src="bs/images/1.jpg" class="img-responsive"></a>
+                      </figure>
+                  </div>
+                  <div class="col-md-4">
+                      <h2>华中科技大学PPT创意大赛</h2>
+                      <figure class="effect-winston">
+                          <a href="bs/ppt.html" target="_blank"><img src="bs/images/2.png" class="img-responsive"></a>
+                      </figure>
+                  </div>
+                  <div class="col-md-4">
+                      <h2>华中网页制作大赛</h2>
+                      <figure  class="effect-winston">
+                          <a href="http://www.hzhtml.com" target="_blank"><img src="bs/images/3.png" class="img-responsive"></a>
+                      </figure>
+                  </div>
             </div>
-            <div class="col-md-4">
-                <h2>华中科技大学PPT创意大赛</h2>
-                <figure class="effect-winston">
-                    <a href="bs/ppt.html" target="_blank"><img src="bs/images/2.png" class="img-responsive"></a>
-                </figure>
-            </div>
-            <div class="col-md-4">
-                <h2>华中网页制作大赛</h2>
-                <figure  class="effect-winston">
-                    <a href="http://www.hzhtml.com" target="_blank"><img src="bs/images/3.png" class="img-responsive"></a>
-                </figure>
-            </div>
-
-
-            </div>
-
-        </div>
-    </div>
+      </div>
 </div>
+
 
 
 

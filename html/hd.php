@@ -9,6 +9,7 @@
 	<meta name="description" content="HUSTCA 华科计算机 协会 社团 华中科技大学计算机协会 华科社团 hust" />
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/custom.css"/>
+    <script src="../js/jquery-1.11.0.min.js"></script>
 
     <!--hd-history start-->
     <link rel="stylesheet" type="text/css" href="hd/hd-history/css/default.css" />
@@ -16,57 +17,12 @@
     <script src="hd/hd-history/js/modernizr.custom.js"></script>
      <!--end-->
 
+    <!--mobile menu begin-->
+     <!--mobile menu end-->
 
-
-    <!--menu-->
-    <link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)"  href="../css/demo.css" />
-    <link type="text/css" rel="stylesheet" media="screen and (max-width:640px)"   href="../css/jquery.mmenu.all.css" />
-    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $('nav#menu').mmenu({
-                extensions	: [ 'effect-slide-menu', 'pageshadow' ],
-                searchfield	: true,
-                counters	: true,
-                navbars		: [
-                    {
-                        position	: 'top'
-                    }, {
-                        position	: 'bottom',
-                        content		: [ '<a href="http://www.hustca.com">华中科技大学计算机协会</a>' ]
-                    }
-                ]
-            });
-        });
-    </script>
-    <!--menu-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".flip").mouseover(function(){
-                $(this).next("div").slideDown(500);
-            });
-            $(".content").mouseleave(function(){
-                $(this).children("div").slideUp(500);
-            });
-        });
-    </script>
+    <!--二级菜单滑动begin-->
+    <!--二级菜单滑动end-->
     <style type="text/css">
-        div.panel,p.flip
-        {
-
-            margin:0px;
-            padding:5px;
-            text-align:center;
-            border: hidden 0px #000000;
-        }
-        div.panel
-        {
-
-            height:auto;
-            display:none;
-        }
-
         .col-md-4 h4{
             text-align: center;
             font-family: "arial", "微软雅黑";
@@ -112,7 +68,7 @@
 
 <!-- Main Page -->
 <?php
-require_once("config/db-con.php");
+require_once("config/db-conn.php");
 
 /*下面是各个类别的分类 规则是基于WordPress的文章分类*/
 
@@ -131,10 +87,7 @@ $query4=mysql_query("select ID,post_title,post_excerpt,guid from wp_posts,wp_ter
         <h6>活动预告</h6>
          <div class="demo-3 ">
             	<ul class="grid cs-style-3">
-                    	<?php
-                        while($rs5=mysql_fetch_array($query5))
-                             {
-                                 ?>
+                    	<?php  while($rs5=mysql_fetch_array($query5)) {  ?>
             					      <li>
                                 <figure>
                                     		  <?php $num = rand(1,7);?>
@@ -148,7 +101,6 @@ $query4=mysql_query("select ID,post_title,post_excerpt,guid from wp_posts,wp_ter
                                 </figure><br>
                                     <h4 style="color:blue"><a  href="<?php echo $rs5['guid'];?>" target="_blank"><?php echo $rs5['post_title'];?></a></h4>
                             </li>
-
             					 <?php   } ?>
             </ul>
          </div>
@@ -162,10 +114,7 @@ $query4=mysql_query("select ID,post_title,post_excerpt,guid from wp_posts,wp_ter
 
         <div class="demo-3 ">
         	<ul class="grid cs-style-3">
-              	<?php
-                         while($rs4=mysql_fetch_array($query4))
-                         {
-                             ?>
+              	<?php   while($rs4=mysql_fetch_array($query4))   {  ?>
       					      <li>
 
                               	<figure>

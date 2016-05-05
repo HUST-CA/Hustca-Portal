@@ -7,48 +7,22 @@
     <meta name="keyword" content="华中科技大学计算机协会"/>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/custom.css"/>
-    <script src="../js/jquery-1.11.0.min.js"></script>
-    <!--menu-->
-    <link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)" href="../css/demo.css" />
-    <link type="text/css" rel="stylesheet" media="screen and (max-width:640px)" href="../css/jquery.mmenu.all.css" />
 
-    <script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $('nav#menu').mmenu({
-                extensions	: [ 'effect-slide-menu', 'pageshadow' ],
-                searchfield	: true,
-                counters	: true,
-                navbars		: [
-                    {
-                        position	: 'top'
-                    }, {
-                        position	: 'bottom',
-                        content		: [ '<a href="http://www.hustca.com">华中科技大学计算机协会</a>' ]
-                    }
-                ]
-            });
-        });
-    </script>
-    <!--menu-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".flip").mouseover(function(){
-                $(this).next("div").slideDown(500);
-            });
-            $(".content").mouseleave(function(){
-                $(this).children("div").slideUp(500);
-            });
-        });
-    </script>
 
+
+    <!--mobile menu begin-->
+     <!--mobile menu end-->
+
+    <!--二级菜单滑动begin-->
+    <!--二级菜单滑动end-->
 
 </head>
 
 <body>
 
 <!--  Navigation Bar -->
-<?php  include_once(dirname(__FILE__) . './navigation.php'); ?>
+<!--这里不必引入navigation.php 因为wechat.php尚未在菜单中 仅在手机版显示 需要 引入menu-mobile.php -->
+
 
 
 <!--mobile menu-->
@@ -119,8 +93,7 @@ for($i=0;$i<sizeof($rssfeed);$i++){//分解开始
 		<div class="col-md-12" style="text-align: center;padding-top: 10%;">
 
 				<h4>微信号: hustca</h4>
-				<h4 style="color: green;"><a href="http://mp.weixin.qq.com/profile?src=3&timestamp=1461584859&ver=1&signature=TJ9-ta1CCt5UC7zajROO1YxwF5dLkrcxQaGyt4u*tkFJegW8vIB9GryuzNT4K1T0bDN99hLt6yaLVG5-a7ojRg==" target="_blank"> 华中大计协</a></h4>
-				<p><?php echo $rss_str."<br />";  ?></p>
+ 				<p><?php echo $rss_str."<br />";  ?></p>
 
 
 		</div>

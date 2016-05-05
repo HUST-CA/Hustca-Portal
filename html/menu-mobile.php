@@ -1,3 +1,27 @@
+<!--mobile menu begin-->
+<link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)"  href="../css/demo.css" />
+<link type="text/css" rel="stylesheet" media="screen and (max-width:640px)"   href="../css/jquery.mmenu.all.css" />
+<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('nav#menu').mmenu({
+            extensions	: [ 'effect-slide-menu', 'pageshadow' ],
+            searchfield	: true,
+            counters	: true,
+            navbars		: [
+                {
+                    position	: 'top'
+                }, {
+                    position	: 'bottom',
+                    content		: [ '<a href="http://www.hustca.com">华中科技大学计算机协会</a>' ]
+                }
+            ]
+        });
+    });
+</script>
+<!--mobile menu end-->
+
 <div class="sjmenu ">
     <div class="header">
         <a href="#menu"></a>
@@ -11,12 +35,12 @@
                     <li><a href="gk.php#introduction">简介</a></li>
                     <li><a href="gk.php#group">部门</a>
                         <ul>
-                            <li><a href="gk/bumen/bumen.php#first">办公室</a></li>
-                            <li><a href="gk/bumen/bumen.php#sec">权益部</a></li>
-                            <li><a href="gk/bumen/bumen.php#thirth">财务部</a></li>
-                            <li><a href="gk/bumen/bumen.php#fourth">活动部</a></li>
-                            <li><a href="gk/bumen/bumen.php#fifth">媒体部</a></li>
-                            <li><a href="gk/bumen/bumen.php#sixth">外联部</a></li>
+                            <li><a href="gk/bumen/bumen.html#first">办公室</a></li>
+                            <li><a href="gk/bumen/bumen.html#sec">权益部</a></li>
+                            <li><a href="gk/bumen/bumen.html#thirth">财务部</a></li>
+                            <li><a href="gk/bumen/bumen.html#fourth">活动部</a></li>
+                            <li><a href="gk/bumen/bumen.html#fifth">媒体部</a></li>
+                            <li><a href="gk/bumen/bumen.html#sixth">外联部</a></li>
                         </ul></li>
                     <li><a href="gk.php#history">历史</a></li>
                     <li><a href="gk.php#people">人事</a></li>

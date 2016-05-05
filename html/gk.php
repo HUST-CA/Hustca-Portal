@@ -12,74 +12,16 @@
 		<link rel="stylesheet" type="text/css" href="../css/custom.css"/>
         <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
 
+				<!--mobile menu begin-->
+		     <!--mobile menu end-->
 
-
-
-
-
-
-        <!--menu-->
-        <link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)" href="../css/demo.css" />
-        <link type="text/css" rel="stylesheet" media="screen and (max-width:640px)" href="../css/jquery.mmenu.all.css" />
-
-        <script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
-        <script type="text/javascript">
-            $(function() {
-                $('nav#menu').mmenu({
-                    extensions	: [ 'effect-slide-menu', 'pageshadow' ],
-                    searchfield	: true,
-                    counters	: true,
-                    navbars		: [
-                        {
-                            position	: 'top'
-                        }, {
-                            position	: 'bottom',
-                            content		: [ '<a href="http://www.hustca.com">华中科技大学计算机协会</a>' ]
-                        }
-                    ]
-                });
-            });
-        </script>
-        <!--menu-->
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $(".flip").mouseover(function(){
-                    $(this).next("div").slideDown(500);
-                });
-                $(".content").mouseleave(function(){
-                    $(this).children("div").slideUp(500);
-                });
-            });
-        </script>
-
-
+		    <!--二级菜单滑动begin-->
+		    <!--二级菜单滑动end-->
 
         <style type="text/css">
-            div.panel,p.flip
-            {
-
-                margin:0px;
-                padding:5px;
-                text-align:center;
-                border: hidden 0px #000000;
-            }
-            div.panel
-            {
-
-                height:auto;
-                display:none;
-            }
-            .banner{
-                height: 20%;
-            }
+            .banner{ height: 20%;  }
+						.lishish{ padding-top: 20px;  }
         </style>
-        <style type="text/css">
-            .lishish{
-                padding-top: 20px;
-
-            }
-        </style>
-
         <script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script>
         <script type="text/javascript">uaredirect("http://www.hustca.com/html/gk-m.php");</script>
 </head>

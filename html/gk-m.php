@@ -10,77 +10,14 @@
 
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/custom.css"/>
-        <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
-
-
-
-
-
-
-
-        <!--menu-->
-        <link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)" href="../css/demo.css" />
-        <link type="text/css" rel="stylesheet" media="screen and (max-width:640px)" href="../css/jquery.mmenu.all.css" />
-
-        <script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
-        <script type="text/javascript">
-            $(function() {
-                $('nav#menu').mmenu({
-                    extensions	: [ 'effect-slide-menu', 'pageshadow' ],
-                    searchfield	: true,
-                    counters	: true,
-                    navbars		: [
-                        {
-                            position	: 'top'
-                        }, {
-                            position	: 'bottom',
-                            content		: [ '<a href="http://www.hustca.com">华中科技大学计算机协会</a>' ]
-                        }
-                    ]
-                });
-            });
-        </script>
-        <!--menu-->
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $(".flip").mouseover(function(){
-                    $(this).next("div").slideDown(500);
-                });
-                $(".content").mouseleave(function(){
-                    $(this).children("div").slideUp(500);
-                });
-            });
-        </script>
-
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
 
 
         <style type="text/css">
-            div.panel,p.flip
-            {
-
-                margin:0px;
-                padding:5px;
-                text-align:center;
-                border: hidden 0px #000000;
-            }
-            div.panel
-            {
-
-                height:auto;
-                display:none;
-            }
-            .banner{
-                height: 20%;
-            }
+            .banner{ height: 20%;   }
+						.lishish{   padding-top: 20px;  }
         </style>
-        <style type="text/css">
-            .lishish{
-                padding-top: 20px;
-
-            }
-        </style>
-
-
+  
 </head>
 
 	<body>
@@ -172,10 +109,10 @@
   <!-- Footer -->
 <?php  include_once(dirname(__FILE__) . './footer.php'); ?>
 
-        <!--up start-->
-        <script type="text/javascript" src="../js/scrolltopcontrol.js"></script>
-        <div style="height:10px;"></div>
-        <!--up end-->
+<!--up start-->
+<script type="text/javascript" src="../js/scrolltopcontrol.js"></script>
+<div style="height:10px;"></div>
+<!--up end-->
 
 
 

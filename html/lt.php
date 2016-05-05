@@ -10,55 +10,18 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/custom.css"/>
 
-    <!--menu-->
-    <link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)" href="../css/demo.css" />
-    <link type="text/css" rel="stylesheet" media="screen and (max-width:640px)" href="../css/jquery.mmenu.all.css" />
-    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $('nav#menu').mmenu({
-                extensions	: [ 'effect-slide-menu', 'pageshadow' ],
-                searchfield	: true,
-                counters	: true,
-                navbars		: [
-                    {
-                        position	: 'top'
-                    }, {
-                        position	: 'bottom',
-                        content		: [ '<a href="http://www.hustca.com">华中科技大学计算机协会</a>' ]
-                    }
-                ]
-            });
-        });
-    </script>
-    <!--menu-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".flip").mouseover(function(){
-                $(this).next("div").slideDown(500);
-            });
-            $(".content").mouseleave(function(){
-                $(this).children("div").slideUp(500);
-            });
-        });
-    </script>
+    <script src="../js/jquery-1.11.0.min.js"></script> <!--菜单不滑动可在此引入 jquery-1.11.0.min.js  与menu-mobile.php可重复-->
+
+
+    <!--mobile menu begin-->
+     <!--mobile menu end-->
+
+    <!--二级菜单滑动begin-->
+    <!--二级菜单滑动end-->
+
+
 
     <style type="text/css">
-        div.panel,p.flip
-        {
-
-            margin:0px;
-            padding:5px;
-            text-align:center;
-            border: hidden 0px #000000;
-        }
-        div.panel
-        {
-
-            height:auto;
-            display:none;
-        }
         @media only screen  and (min-width: 640px) {
             .lt {
                 text-decoration: none;

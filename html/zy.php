@@ -10,61 +10,19 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/custom.css"/>
     <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../html/zy/zy.css"/>
 
-    <script src="../js/jquery-1.11.0.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
 
-    <!--menu-->
-    <link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)" href="../css/demo.css" />
-    <link type="text/css" rel="stylesheet" media="screen and (max-width:640px)" href="../css/jquery.mmenu.all.css" />
+    <script src="../js/jquery-1.11.0.min.js"></script> <!--菜单不滑动可在此引入 jquery-1.11.0.min.js  与menu-mobile.php可重复-->
 
-    <script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $('nav#menu').mmenu({
-                extensions	: [ 'effect-slide-menu', 'pageshadow' ],
-                searchfield	: true,
-                counters	: true,
-                navbars		: [
-                    {
-                        position	: 'top'
-                    }, {
-                        position	: 'bottom',
-                        content		: [ '<a href="http://www.hustca.com">华中科技大学计算机协会</a>' ]
-                    }
-                ]
-            });
-        });
-    </script>
-    <!--menu-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".flip").mouseover(function(){
-                $(this).next("div").slideDown(500);
-            });
-            $(".content").mouseleave(function(){
-                $(this).children("div").slideUp(500);
-            });
-        });
-    </script>
 
+
+    <!--mobile menu begin-->
+     <!--mobile menu end-->
+
+    <!--二级菜单滑动begin-->
+    <!--二级菜单滑动end-->
+    
     <style type="text/css">
-        div.panel,p.flip
-        {
-
-            margin:0px;
-            padding:5px;
-            text-align:center;
-            border: hidden 0px #000000;
-        }
-        div.panel
-        {
-
-            height:auto;
-            display:none;
-        }
-
         .others{
             text-align: center;
         }
@@ -81,7 +39,6 @@
             display: block;
             padding: 0;
         }
-
         .col-md-2{text-align: left}
         .col-md-6{text-align: left}
         .btn-primary{
@@ -120,7 +77,7 @@
 
 
 
-<!-- Main Page -->
+<!-- Main Page -->  <!--四个卡片-->
 <?php  include_once(dirname(__FILE__) . './zy/mainpage.html'); ?>
 
 
