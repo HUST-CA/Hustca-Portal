@@ -1,6 +1,6 @@
-<?php
+ <?php
 require_once '../php/conn.php';
-$query=mysql_query("select * from ca_tougao");
+$query=mysql_query("select title,link from ca_tougao");
 ?>
 <html>
 <head>
@@ -18,15 +18,9 @@ $query=mysql_query("select * from ca_tougao");
       <div class="col-md-3">
         <h1 class="index-page-title">投递资源列表</h1>
                 <ul class="index-p">
-                       <?php
-                               while($rs1=mysql_fetch_array($query))
-                               {
-                                   ?>
-                                   <p>
-                                     【<a href="<?php echo $rs1['link'];?>" target="_blank"><?php echo $rs1['title'];?></a>】
-                                    </p>
-                               <?php   }
-                            ?>
+                       <?php  while($rs=mysql_fetch_array($query))  { ?>
+                            <p>【<a href="<?php echo $rs['link'];?>" target="_blank"><?php echo $rs['title'];?></a>】 </p>
+                       <?php   }   ?>
                 </ul>
         </div>
 

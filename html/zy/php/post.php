@@ -13,19 +13,36 @@ function test_input($data) {
 }
 //post接收表单内容
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $title = test_input($_POST['title']);
+    $title = $_POST['title'];
     $link = $_POST['link'];
     $intro = $_POST['intro'];
 
 }
 
 
-
-
-
-//这里是要输进数据库的内容
-//$sql="insert into 数据表名 （数据表项，数据表项） values ('相应数据'，'相应数据')"；
 $sql = "insert ignore into ca_tougao (title,link,intro) VALUES('$title','$link','$intro')";
 
-echo "<script>alert('       投递成功！\\n \\n  单击“确定”查看投递资源列表');location.href= '../tougao/index.php'</script>";
+
+
+if (mysql_query($sql,$con))
+{
+?>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<p>&nbsp;</p>
+<?php
+	//读取数据库内容
+	$result = mysql_query("select * from ca_tougao");
+	while($row = mysql_fetch_array($result)){
+	echo "<script>alert(' 投递成功！\\n \\n  单击“确定”查看投递资源列表');location.href= '../tougao/index.php'</script>";
+	}
+}
+else
+{
+   die('Error: ' . mysql_error());
+}
+//关闭数据库
+mysql_close($con);
 ?>
