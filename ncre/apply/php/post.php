@@ -163,7 +163,7 @@ if (mysql_query($sql,$con))
 	//你的邮箱账号(去掉@163.com)
 	$smtpuser = "hustca";//SMTP服务器的用户帐号 
 	//你的邮箱密码
-	$smtppass = "hustca2013"; //SMTP服务器的用户密码
+	$smtppass = "12345678"; //SMTP服务器的用户密码
 	//邮件主题 
 	$mailsubject = "加盟技术团队";
 	//邮件内容

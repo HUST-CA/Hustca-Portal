@@ -124,7 +124,7 @@ if (mysql_query($sql,$con))
 	//你的邮箱账号(去掉@163.com)
 	$smtpuser = "hustca";//SMTP服务器的用户帐号
 	//你的邮箱密码
-	$smtppass = "hustca2013"; //SMTP服务器的用户密码
+	$smtppass = "12345678"; //SMTP服务器的用户密码
 	//发件人昵称
     $fromname ="华中科技大学计算机协会";
 	//邮件主题
