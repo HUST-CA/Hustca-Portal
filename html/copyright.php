@@ -1,4 +1,5 @@
 
+<?php date_default_timezone_set("PRC"); ?>
 <div class="hustca-footer-co">
     <div class="hustca-row">
         <div class="col-21-24">
