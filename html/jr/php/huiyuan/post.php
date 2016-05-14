@@ -21,8 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $level = $_POST['level'];
     $groups = $_POST['groups'];
     $applytime=date('Y-m-d H:i:s');
-	$email2= "940871318@qq.com";
-	$email3="137945693@qq.com";
+ 
 
 
 }
@@ -119,20 +118,22 @@ if (mysql_query($sql,$con))
 	$result = mysql_query("select * from huiyuan where email = \"$email\"");
 	while($row = mysql_fetch_array($result)){
 	$team_id = $row['id'] + 10000;
-    //引入发送邮件类
-	require("../../../config/smtp.php"); 
-	//使用163邮箱服务器
-	$smtpserver = "smtp.126.com";
-	//163邮箱服务器端口
-	$smtpserverport = 25;
-	//你的163服务器邮箱账号
-	$smtpusermail = "hustca@126.com";
-	//你的邮箱账号(去掉@163.com)
-	$smtpuser = "hustca";//SMTP服务器的用户帐号
-	//你的邮箱密码
-	$smtppass = "12345678"; //SMTP服务器的用户密码
-	//发件人昵称
-    $fromname ="华中科技大学计算机协会";
+ //邮件相关配置已在mailconfig 中配置 如需要进行个性化设置 请在此处单独设置 并在conn.php中去除mailconfig.php的引入 按照如下格式修改
+  //引入发送邮件类
+  //require("../../../config/smtp.php");
+  //使用163邮箱服务器
+  //$smtpserver = "smtp.126.com";
+  //163邮箱服务器端口
+  //$smtpserverport = 25;
+  //你的163服务器邮箱账号
+  //$smtpusermail = "hustca@126.com";
+  //你的邮箱账号(去掉@163.com)
+  //$smtpuser = "hustca";//SMTP服务器的用户帐号
+  //你的邮箱密码
+  //$smtppass = "12345678"; //SMTP服务器的用户密码
+  //发件人昵称
+  //$fromname ="华中科技大学计算机协会";
+
 	//邮件主题
 	$mailsubject = "华中科技大学会员报名";
 	//邮件内容

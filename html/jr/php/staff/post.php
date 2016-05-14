@@ -131,20 +131,7 @@ if (mysql_query($sql,$con))
     $result = mysql_query("select * from staff where email = \"$email\"");
     while($row = mysql_fetch_array($result)){
         $team_id = $row['id'] + 000;
-        //引入发送邮件类
-        require("../../../config/smtp.php");
-        //使用163邮箱服务器
-        $smtpserver = "smtp.126.com";
-        //163邮箱服务器端口
-        $smtpserverport = 25;
-        //你的163服务器邮箱账号
-        $smtpusermail = "hustca@126.com";
-        //你的邮箱账号(去掉@163.com)
-        $smtpuser = "hustca";//SMTP服务器的用户帐号
-        //你的邮箱密码
-        $smtppass = "12345678"; //SMTP服务器的用户密码
-		//发件人昵称
-        $fromname ="华中科技大学计算机协会";
+
         //邮件主题
         $mailsubject = "华中科技大学部员申请";
         //邮件内容

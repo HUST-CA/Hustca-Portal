@@ -22,9 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $experience = $_POST['experiences'];
 	$applytime=date('Y-m-d H:i:s');
 
-	//$email2= "zhf@hustca.com";
-	$email2= "940871318@qq.com";
-	$email3="137945693@qq.com";
+	 
 
 }
 
@@ -139,20 +137,7 @@ if (mysql_query($sql,$con))
     $result = mysql_query("select * from corepair where email = \"$email\"");
     while($row = mysql_fetch_array($result)){
 
-        require("../../config/smtp.php");
-        //使用163邮箱服务器
-        $smtpserver = "smtp.126.com";
-        //163邮箱服务器端口
-        $smtpserverport = 25;
-        //你的163服务器邮箱账号
-        $smtpusermail = "hustca@126.com";
-        //你的邮箱账号(去掉@163.com)
-        $smtpuser = "hustca";//SMTP服务器的用户帐号
-        //你的邮箱密码
-        $smtppass = "12345678"; //SMTP服务器的用户密码
-		//发件人昵称
-		$fromname ="华中科技大学计算机协会";
-        //邮件主题
+
         $mailsubject = "义务维修队加盟";
         //邮件内容
         $mailbody = "恭喜您，加盟成功！请留意相关培训后期活动通知。\n\n\n\n欢迎访问华中科技大学计算机协会官网\nhttp://www.hustca.com\n更多活动讯息可在官网查看哦！";
