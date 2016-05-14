@@ -9,15 +9,15 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1,minimun-scale=1, maximum-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/css/custom.css"/>
 
 
         <!--menu-->
-        <link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)" href="css/demo.css" />
-        <link type="text/css" rel="stylesheet" media="screen and (max-width:640px)" href="css/jquery.mmenu.all.css" />
-        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+        <link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)" href="styles/css/demo.css" />
+        <link type="text/css" rel="stylesheet" media="screen and (max-width:640px)" href="styles/css/jquery.mmenu.all.css" />
+        <script type="text/javascript" src="styles/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="styles/js/jquery.mmenu.min.all.js"></script>
         <script type="text/javascript">
             $(function() {
                 $('nav#menu').mmenu({
@@ -410,8 +410,8 @@ $query5=mysql_query("select ID,post_title,guid from wp_posts,wp_term_relationshi
             </div>
 
 
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/myscript.js"></script>
+		<script src="styles/js/bootstrap.min.js"></script>
+		<script src="styles/js/myscript.js"></script>
 
 	 </div>
     </body>

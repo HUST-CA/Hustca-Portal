@@ -1,8 +1,8 @@
 <!--mobile menu begin-->
-<link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)"  href="../css/demo.css" />
-<link type="text/css" rel="stylesheet" media="screen and (max-width:640px)"   href="../css/jquery.mmenu.all.css" />
-<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
+<link type="text/css" rel="stylesheet"  media="screen and (max-width:640px)"  href="../styles/css/demo.css" />
+<link type="text/css" rel="stylesheet" media="screen and (max-width:640px)"   href="../styles/css/jquery.mmenu.all.css" />
+<script type="text/javascript" src="../styles/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../styles/js/jquery.mmenu.min.all.js"></script>
 <script type="text/javascript">
     $(function() {
         $('nav#menu').mmenu({

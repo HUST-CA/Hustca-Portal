@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keyword" content="华中科技大学计算机协会"/>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/custom.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/css/custom.css"/>
 
 
 
@@ -112,7 +112,7 @@ for($i=0;$i<sizeof($rssfeed);$i++){//分解开始
 
 
 
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/myscript.js"></script>
+<script src="../styles/js/bootstrap.min.js"></script>
+<script src="../styles/js/myscript.js"></script>
 </body>
 </html>

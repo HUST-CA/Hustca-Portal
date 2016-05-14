@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keyword" content="华中科技大学计算机协会"/>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/custom.css"/>
-    <script src="../js/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/css/custom.css"/>
+    <script src="../styles/js/jquery-1.11.0.min.js"></script>
 
     <!--mobile menu begin-->
      <!--mobile menu end-->
@@ -97,12 +97,12 @@
 
 
 <!--up start-->
-<script type="text/javascript" src="../js/scrolltopcontrol.js"></script>
+<script type="text/javascript" src="../styles/js/scrolltopcontrol.js"></script>
 <div class="up" style="height: 10px"></div>
 <!--up end-->
 
 
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/myscript.js"></script>
+<script src="../styles/js/bootstrap.min.js"></script>
+<script src="../styles/js/myscript.js"></script>
 </body>
 </html>
