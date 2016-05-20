@@ -33,7 +33,7 @@
 <!-- Banner -->
 <div class="banner">
     <div class="banner-images">
-     <img src="../images/bs-banner.jpg" class="img-responsive">
+     <img src="../styles/images/bs-banner.jpg" class="img-responsive">
 
     </div>
 </div>

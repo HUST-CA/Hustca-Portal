@@ -52,7 +52,7 @@
 <!-- Banner -->
 <div class="banner">
     <div class="banner-images">
-        <img src="../images/xm-banner.jpg" class="img-responsive">
+        <img src="../styles/images/xm-banner.jpg" class="img-responsive">
     </div>
 </div>
 

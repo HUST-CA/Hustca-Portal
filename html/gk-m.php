@@ -32,7 +32,7 @@
 <!-- Banner -->
 <div class="banner">
     <div class="banner-images">
-        <img src="../images/gk.jpg"  class="img-responsive" width="100%" height="400" usemap="#Map">
+        <img src="../styles/images/gk.jpg"  class="img-responsive" width="100%" height="400" usemap="#Map">
         <map name="Map">
           <area shape="rect" coords="104,212,477,265" href="#introduction">
           <area shape="rect" coords="106,273,383,334" href="#group">

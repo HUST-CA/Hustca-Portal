@@ -48,7 +48,7 @@
 <!-- Banner -->
 <div class="banner">
     <div class="banner-images">
-        <img src="../images/px-banner.jpg" class="img-responsive">
+        <img src="../styles/images/px-banner.jpg" class="img-responsive">
     </div>
 </div>
 

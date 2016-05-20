@@ -8,7 +8,7 @@ $query=mysql_query("select title,link from ca_tougao");
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="keyword" content="华中科技大学计算机协会"/>
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../../../styles/css/bootstrap.min.css"/>
 
 </head>
 <body>

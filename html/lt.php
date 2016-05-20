@@ -51,7 +51,7 @@
 <!-- Banner -->
 <div class="banner">
     <div class="banner-images">
-        <img src="../images/lt-banner.jpg" class="img-responsive">
+        <img src="../styles/images/lt-banner.jpg" class="img-responsive">
 
     </div>
 
